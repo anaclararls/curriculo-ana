@@ -36,6 +36,7 @@ body {
     justify-content: center;
     color: #fff;
     text-shadow: 3px 2px var(cor)
+    margin: auto;
 }
 
 .descricao-profissao {
@@ -102,17 +103,30 @@ hr {
     font-family: 'PT Mono', monospace;
 }
 
+/*
+
+.container__main--informacoes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+        "main main main"
+}
+*/
+
 .containers__main--informacoes {
     
-    width: auto;
+    width: 100%;
     height: auto;
-    margin: 100px;
+    margin-top: 50px;
+    margin-left: 80px;
+    padding: 20px;
     display: grid;
-    grid-template-columns: repeat(3, 5fr);
-    column-gap: 10px;
-    justify-content: center;
-    
+    grid-template-columns: repeat(3, 1fr);
+
+
 }
+
+
 
 .container__informacoes {
     width: 400px;
@@ -131,6 +145,7 @@ hr {
     transition: 1s;
 }
 
+
 .titulos-secundarios {
     font-family: 'PT Mono', monospace;
     text-align: center;
@@ -144,6 +159,11 @@ hr {
 
 .skillshr {
     width: 50%;
+}
+
+
+.parag-interesses {
+    line-height: 100px;
 }
 
 .container__experiencia {
@@ -168,6 +188,13 @@ hr {
     line-height: 20px;
 }
 
+footer {
+    text-align: center;
+    font-family: 'PT Mono', monospace;
+    padding: 20px;
+    margin-top: 50px;
+    color: var(--cor-paragrafos);
+}
 
 
 
