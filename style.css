@@ -1,0 +1,185 @@
+@charset "UTF-8"
+
+* {
+    font-size: 1em;
+    margin: auto
+}
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+@font-face {
+    font-family: 'Storm Gust';
+    src: url(fonts/Storm\ Gust.otf);
+}
+
+@font-face {
+    font-family: 'Pixel Icons Compilation';
+    src: url(fonts/Pixel\ Icons\ Compilation.ttf);
+}
+
+:root {
+    --cor-titulo-principal: black;
+    --cor-titulo-secundario: rgb(208, 255, 0);
+    --cor-paragrafos: rgb(73, 73, 73);  
+    --shadow: 3px 2px lightgray;  
+}
+
+body {
+    background-color: var(--cor-titulo-principal);
+    color: #fff;
+}
+
+#titulo-site {
+    font-family: 'Storm Gust', fantasy;
+    font-size: 7em;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-shadow: 3px 2px var(cor)
+}
+
+.descricao-profissao {
+    font-family: 'Storm Gust', fantasy;
+    color: #fff;
+    font-size: 2em;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+li::marker {
+    content: none;
+}
+
+nav {
+    color: var(--cor-titulo-secundario);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-top: 90px;
+    border: 1px solid rgba(208, 255, 0, 0.685);
+    height: 20px;
+}
+
+a {
+    font-size: 16px;
+    font-family: 'PT Mono', monospace;
+    text-decoration: none;
+    color: var(--cor-titulo-secundario);
+}
+
+a:hover {
+    color: #fff;
+    font-size: 17px;
+    transition: 1s;
+}
+
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 520px;
+}
+
+.container__sobremim {
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid var(--cor-titulo-secundario);
+}
+
+.titulo-sobremim {
+    text-align: center;
+    font-family: 'PT Mono', monospace;
+    font-weight: bolder;
+    color: var(--cor-titulo-secundario);
+}
+
+.parag-sobremim {
+    text-indent: 50px;
+    text-align: justify;
+    padding: 10px;
+    font-family: 'PT Mono', monospace;
+}
+
+.containers__main--informacoes {
+    
+    width: auto;
+    height: auto;
+    margin: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    column-gap: 10px;
+    justify-content: center;
+    
+}
+
+.container__informacoes {
+    width: 400px;
+    padding: 20px;
+    margin-top: 30px;
+    display: grid;
+    justify-content: center;
+    grid-column: auto;
+    border: 1px solid var(--cor-titulo-secundario);   
+    box-sizing: border-box;
+    line-height: 30px;
+}
+
+.container__informacoes:hover {
+    border: 1px solid #b0e03e91;
+    transition: 1s;
+}
+
+.titulos-secundarios {
+    font-family: 'PT Mono', monospace;
+    text-align: center;
+    color: var(--cor-titulo-secundario);
+}
+
+.parag-formacao, .lista-skills, .parag-interesses {
+    font-family: 'PT Mono', monospace;
+    font-size: 18px;
+}
+
+.skillshr {
+    width: 50%;
+}
+
+.container__experiencia {
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    box-sizing: border-box;
+    border: 1px solid var(--cor-titulo-secundario);
+}
+
+.titulo--experiencia {
+    font-size: 20px;
+    font-family: 'PT Mono', monospace;
+    margin-left: 20px;
+}
+
+.parag-experiencia {
+    font-size: 18px;
+    font-family: 'PT Mono', monospace;
+    padding: 20px;
+    color: rgb(155, 155, 155);
+    line-height: 20px;
+}
+
+
+
+
+/*
+main {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-span: 10px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+*/
+
+
